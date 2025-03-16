@@ -34,9 +34,9 @@ header h1 {
 .leaf-top-left {
     top: 0;       
     left: 0; 
-    width: 10rem;          
+    width: 8rem;          
     height: auto;     
-    transform: translate(0%, 0%); 
+    transform: translate(-5%, 0%); 
     /* move the image further outward to make closer to margin (had this at -20,-20 before) */
 }
 
