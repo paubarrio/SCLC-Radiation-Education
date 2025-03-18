@@ -23,6 +23,7 @@ header h1 {
     margin: 0 4rem; /* 4rem on left and right */
     letter-spacing: -0.05rem; 
     line-height: 1.2;
+    z-index: 1;
 }
 .leaf {
     position: absolute;   /* in corners */
@@ -34,9 +35,10 @@ header h1 {
 .leaf-top-left {
     top: 0;       
     left: 0; 
-    width: 8rem;          
+    width: 7rem;          
     height: auto;     
     transform: translate(-5%, 0%); 
+    z-index: 0;
     /* move the image further outward to make closer to margin (had this at -20,-20 before) */
 }
 
@@ -46,8 +48,8 @@ header h1 {
     right: 0;   
     width: 5rem;          
     height: auto;     
-    transform: translate(0%, 0%);
-    /* (had this at 20,20 before) */
+    transform: translate(0%, 0%); /* (had this at 20,20 before) */
+    z-index: 0;
 }
 
 
@@ -56,9 +58,10 @@ nav ul {
     flex-wrap: wrap;     
     list-style: none;
     justify-content: center;
-    gap: 0.1rem;
-    margin: 0;
+    gap: 0rem;
+    margin: 0rem 3rem;
     padding: 0;
+    z-index: 1;
 }
 
 nav ul li {
@@ -196,18 +199,18 @@ form button:hover {
 
 /* Header buttons */
 .nav-btn {
-    background: rgb(246, 109, 109); /* Green color for visibility */
-    color: #fff !important; /* Override default link color */
+    background: rgb(246, 109, 109); 
+    color: #fff !important; /* Override default  color */
     padding: 8px 15px !important;
     border-radius: 5px;
     text-decoration: none;
     transition: background 0.3s;
-    margin-left: 5px; /* Add spacing from other links */
+    margin-left: 5px; /* spacing from other links */
     height: 20px; /* Fixed height */
 }
 
 .nav-btn:hover {
-    background: #eba1a1; /* lighter pink on hover */
+    background: #eba1a1; 
 }
 
 
@@ -216,6 +219,7 @@ form button:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    border: none;
 }
 
 .basics-list {
@@ -284,7 +288,6 @@ form button:hover {
   
 .hero h2 {
     font-size: 2.2rem;
-    margin-bottom: 1rem;
 }
 
 
