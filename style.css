@@ -296,3 +296,157 @@ form button:hover {
     max-width: 600px;
     margin: 0 auto 1.5rem; /* center the text block & add spacing */
 }
+
+
+/* Add these styles to your existing CSS file */
+
+/* Container for content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-left: 5px solid #eb9b9b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    color: #eb9b9b;
+    margin-top: 0;
+}
+
+/* Image styling */
+.symptom-image, .stage-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    opacity: 0.9;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Add these styles to your existing CSS file */
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid layout for text and images */
+.content-grid {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.text-content {
+    flex: 2;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+/* Image styling */
+.symptom-image, .stage-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-credit {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Card styling */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border-left: 5px solid #eb9b9b;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    color: #eb9b9b;
+    margin-top: 0;
+}
+
+/* List styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    opacity: 0.9;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+/* Add more color to headers and text */
+ h2, h3, h4 {
+    color: #eb9b9b;
+}
+
+p {
+    color: #555;
+}

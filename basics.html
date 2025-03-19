@@ -8,39 +8,189 @@
 </head>
 <body>
     <header>
-        <h1>Starting with the Basics</h1>
+        <h1>Radiation Basics</h1>
         <nav>
-             <ul>
-                 <li><a href="index.html" class="nav-btn">Home</a></li>
-                 <li><a href="basics.html" class="nav-btn">The Basics</a></li>
-                 <li><a href="quiz.html" class="nav-btn">Quiz</a></li>  
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="sclc-overview.html" class="nav-btn">SCLC</a></li>
+                <li><a href="basics.html" class="nav-btn">The Basics</a></li>
+                <li><a href="Managing-risks.html" class="nav-btn">Managing Risks</a></li>
+                <li><a href="faq.html" class="nav-btn">FAQ</a></li> 
+                <li><a href="quiz.html" class="nav-btn">Quiz</a></li> 
             </ul>
         </nav>
-        <!-- /* leaf images*/ -->
+        <!-- Leaf images -->
         <img src="images/leaf-1.png" alt="Leaf Decoration" class="leaf leaf-top-left">
         <img src="images/leaf-2.png" alt="Leaf Decoration" class="leaf leaf-bottom-right">
     </header>
 
-    <section id="basics" >
-     <div class="hero2">
-            <div class="container">
-                <h2>Understanding how radiation is used in healthcare for small cell lung cancer </h2>
-                <p></p>
-                <ul class="basics-list">
-                    <li><strong>Diagnosis:</strong> Computed Tomography (CT)</li>
-                    <li><strong>Treatment:</strong> Radiation Therapy</li>
+    <section id="basics">
+        <div class="container">
+            <h2>What Type of Radiation is Used in Diagnosis and Treatment?</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3>Diagnosis: CT</h3>
+                    <p>CT uses x-rays, which is a form of ionizing radiation. Ionizing radiation is defined as radiation that has undergone ionization.</p>
+                    <ul>
+                        <li><strong>Ionization:</strong> Occurs when radiation has enough energy to eject an orbital electron from a molecule or atom.</li>
+                        <li><strong>Energy Release:</strong> Large amount of energy being released locally is a key characteristic of ionizing radiation.</li>
+                    </ul>
+                    <p class="image-credit">Image Credit: <a href="https://www.macmillan.org.uk/cancer-information-and-support/diagnostic-tests/ct-scan" target="_blank">Macmillan</a></p>
+                </div>
+                <div class="image-content">
+                    <img src="images/ct-scan.png" alt="CT Scan" class="symptom-image">
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <div class="text-content">
+                    <h3>Treatment: Radiation Therapy</h3>
+                    <p>External beam radiation therapy uses a radiation beam with photons (x-rays), protons, and electrons.</p>
+                    <ul>
+                        <li><strong>Photons:</strong>
+                            <ul>
+                                <li>High penetrating ability, allowing beam to reach tumours deep in the body.</li>
+                                <li>Travel into the patient’s tissue after hitting a tumour.</li>
+                                <li>Much higher energy levels relative to photons in x-ray imaging.</li>
+                                <li>Undergo scatter along their path.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Protons:</strong>
+                            <ul>
+                                <li>Particles with a positive charge.</li>
+                                <li>High penetrating ability, allowing beam to reach tumours deep in the body.</li>
+                                <li>Beam stops after hitting a tumour, thereby decreasing the fraction of healthy tissue hit during radiation therapy.</li>
+                                <li>Does not undergo scatter along its path.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Electrons:</strong>
+                            <ul>
+                                <li>Particles with a negative charge.</li>
+                                <li>Limited to superficial tumours and tumours upon skin due to not being able to penetrate the body very deeply.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="image-credit">Image Credit: <a href="https://www.freeimages.com/premium-clipart/radio-therapy-5141385" target="_blank">FreeImages</a></p>
+                </div>
+                <div class="image-content">
+                    <img src="images/radiation-therapy.jpg" alt="Radiation Therapy" class="symptom-image">
+                </div>
+            </div>
+
+            <h3>How Different Types of Radiation Interact with Different Cell Types and Critical Structures</h3>
+            <div class="card">
+                <ul>
+                    <li>No visible signs or symptoms for doses within the diagnostic imaging range.</li>
+                    <li>Signs and symptoms from the doses associated with radiation therapy include fatigue, difficulty breathing, nausea, vomiting, irritation of the skin, scarring of lung tissue, radiation pneumonitis, and more.</li>
+                    <li>X-rays are sparsely ionizing, making it low LET and undergoing indirect action.
+                        <ul>
+                            <li>Indirect action occurs when radiation interacts with other atoms or molecules in the cell, especially water. This action generates free radicals that can diffuse over long distances and potentially damage critical targets.</li>
+                        </ul>
+                    </li>
+                    <li>Ionizing radiation causes single strand breaks (SSB) and double strand breaks (DSB) of DNA. These correlate to molecular responses of the body after undergoing doses of ionizing radiation.
+                        <ul>
+                            <li>Free electrons either interact directly with cellular DNA after being liberated via x-rays passing through a cell or combine with other molecules to form free radicals that damage DNA. The free electrons or free radicals are what cause the SSBs or DSBs.</li>
+                            <li>If the cell cannot repair the breaks, loss of function or cell death may occur. Cell mutation can lead to either genetic mutations in germ cells or cancers in somatic cells.</li>
+                        </ul>
+                    </li>
                 </ul>
-                
-                <h3>Radiation uses in SCLC diagnosis and treatment</h3>
-                <div class="card">
-                    <h4>Ionizing Radiation</h4>
-                    <p>High-energy radiation (e.g., X-rays, gamma rays) that can remove electrons from atoms.</p>
+            </div>
+
+            <h3>Risks of CT</h3>
+            <div class="card">
+                <ul>
+                    <li>CT has a large effective dose of about 15 mSv for a chest CT scan. Larger volumes of tissue are being exposed than during a standard x-ray, therefore meaning the patient is exposed to higher doses than for a chest x-ray. Due to the better contrast resolution and greater detail provided, the benefits of CT outweigh the risks.</li>
+                    <li>The most extensive cause of medical exposure to ionizing radiation is CT.</li>
+                    <li>From the low doses associated with diagnostic medical imaging, risk estimates for mortality and radiation-induced cancer are based on data from survivors of the Hiroshima and Nagasaki atomic bomb explosions. The BEIR VII Committee states that “there is a linear, no threshold dose–response relationship between exposure to ionizing radiation and the development of cancer in humans.”</li>
+                    <li>Developing cancer from any cause is a probability of 420/1000. Cancer development having a high natural background incidence makes it quite difficult to accurately quantify excess risk of diagnostic levels of ionizing radiation.</li>
+                    <li>Although the breasts and lungs are the organs most likely to be targeted by radiation-induced cancers in adults, the thyroid absorbs the most dose, but has less of a risk to develop cancer due to its inherent radioresistant from the thyroid shrinking as age increases.</li>
+                    <li>The radiation doses used in most diagnostic imaging procedures are too low to cause deterministic effects. However, genetic mutations can result in stochastic effects, such as cancer, which is a significant risk linked to ionizing radiation from diagnostic imaging. These effects have no minimum threshold, but their likelihood of occurrence increases in direct proportion to radiation exposure.</li>
+                    <li>The overall five-year survival rate for lung cancer is just 16%. Early-stage cases are typically detected by chance during imaging studies conducted for unrelated reasons. As a result, implementing CT scans for lung cancer screening is extremely beneficial.</li>
+                    <li>Since chest CTs for screening utilize low doses to accommodate for risk, they have an estimated average effective dose of 0.65 mSv and utilize technical factors of 12–140 kVp and 20-40 mA.</li>
+                    <li>According to estimates from the International Commission on Radiological Protection, radiation-induced cancer is expected to develop in 3 out of every 100,000 screened men and 6 out of every 100,000 screened women over a 15- to 20-year period. These projections do not include the potential impact of annual repeat or follow-up examinations.</li>
+                    <li>On rare occasions, contrast-enhanced CT can cause allergic reactions due to injection of the contrast agent. Symptoms include itching, hives, shortness of breath, and swelling of the throat. Contrast agents also have a very small risk of causing problems in the kidneys. This risk applies to those with preexisting impaired kidney function. To prevent these risks, precautions are taken before administering the contrast, such as checking kidney function via blood test and checking the patient’s allergy history in their chart.</li>
+                </ul>
+            </div>
+
+            <h3>Risks of Radiation Therapy</h3>
+            <div class="card">
+                <ul>
+                    <li>During radiation therapy, the healthcare team takes measures to protect healthy cells in the treatment area as much as possible. However, some damage to healthy cells may still occur, leading to side effects. These side effects can arise at any time. This includes during treatment, immediately after treatment, or within days or weeks after treatment. In some cases, late side effects may appear months or even years later. While most side effects resolve on their own or can be managed, some may persist for a long time or become permanent.</li>
+                    <li>Radiation therapy causes induction of DNA breaks, leading to cell death.
+                        <ul>
+                            <li>Cancer cells are more severely affected than normal cells.</li>
+                        </ul>
+                    </li>
+                    <li>The free radicals formed via ionization radiation of the radiation beam damage important cellular components, leading to chromosomal aberrations and rearrangements, and double strand breaks (DSBs).
+                        <ul>
+                            <li>These changes cause cells to become lethally damaged, which continue to divide before cell death occurs via mitotic cell death or apoptosis.</li>
+                        </ul>
+                    </li>
+                    <li>Mitotic cell death occurs due to chromosomal damage that was improperly repaired.</li>
+                    <li>Apoptosis occurs due to resulting damage.</li>
+                    <li>The time before cell death is what causes the latent period before acute side effects of radiation therapy.</li>
+                    <li>Fibrosis and scarring may occur due to stem cells differentiating into fibroblasts as a response to irradiation.</li>
+                </ul>
+            </div>
+
+
+            <h3>Compare to Radiation Exposure of Other Events</h3>
+            <div class="content-grid">
+                <div class="text-content">
+                    <ul>
+                        <li>One chest CT scan for diagnosis of SCLC is a dose of approximately 1.6 mSv for males and 2.1 mSv for females. The dose for females is higher due to accommodate for breast tissue.
+                            <ul>
+                                <li>Although cancer formation is a stochastic effect, meaning it has no threshold and dose increases probability of cancer formation, the dose from medical imaging is low. In fact, it is lower than the average yearly background radiation dose of approximately 3 mSv.</li>
+                            </ul>
+                        </li>
+                        <li>The National Comprehensive Cancer Network (NCCN) recommends that radiation therapy for treating lung cancer should be a total dose of 45 Gy (1.5 Gy fractions twice a day over 3 weeks) or a total dose of 60 to 70 Gy (2.0 Gy fractions once a day over 6 to 7 weeks).
+                            <ul>
+                                <li>Because this dose is fractionated, cells in the body have the opportunity to repair between doses.</li>
+                            </ul>
+                        </li>
+                        <li>Natural background radiation:
+                            <ul>
+                                <li>The average annual equivalent dose for cosmic rays is 0.26 mSv in the USA. This dose is specifically at sea level and doubles for each increase in altitude of 2000 meters.</li>
+                                <li>The dose from the Earth’s crust ranges from 0.15 to 1.40 mGy per year, depending on region and altitude.</li>
+                                <li>Potassium-40 is found in some of our food, such as bananas, and has a dose rate of 0.2 mSv per year.</li>
+                                <li>Radon is the largest source of natural background radiation, and is responsible for approximately 10% of all lung cancer deaths, which is about 15,400 to 21,800 people.</li>
+                            </ul>
+                        </li>
+                        <li>Chernobyl:
+                            <ul>
+                                <li>Those living around the plant that had to be evacuated sustained an average effective radiation dose of 30 mSv.</li>
+                                <li>In the surrounding countries such as Belarus, Russia, and Ukraine, the general public living there received a relatively low average effect dose of 9 mSv.</li>
+                                <li>From 1986 to 1990, the recovery operation workers that were directly on the site of the blast were exposed to a wide range of doses, averaging to 120 mSv.</li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="card">
-                    <h4>Non-Ionizing Radiation</h4>
-                    <p>Lower-energy radiation (e.g., radio waves, visible light) that doesn’t ionize atoms.</p>
+                <div class="image-content">
+                    <img src="images/compare1.png" alt="Radiation Comparison 1" class="symptom-image">
+                    <p class="image-credit">Image Credit: <a href="https://www.arpansa.gov.au/understanding-radiation/radiation-sources/more-radiation-sources/ionising-radiation-and-health" target="_blank">ARPANSA</a></p>
+                    <img src="images/compare2.png" alt="Radiation Comparison 2" class="symptom-image">
+                    <p class="image-credit">Image Credit: Worldwide Distribution of Radiation Exposure</p>
                 </div>
-    </div>
+            </div>
+
+
+            <h3>References</h3>
+            <div class="card">
+                <ul>
+                    <li>Devic et al. (2022) Influence of cellular models and individual factor in the biological response to chest CT scan exams. <em>European Radiology Experimental</em>, 6(1). <a href="https://doi.org/10.1186/s41747-022-00266-0" target="_blank">https://doi.org/10.1186/s41747-022-00266-0</a></li>
+                    <li>Farrell et al. (2019) Radiation Dose and Fractionation for Limited-stage Small-cell Lung Cancer: Survey of US Radiation Oncologists on Practice Patterns. <em>Clinical Lung Cancer</em>, 20(1), 13-19. <a href="https://doi.org/10.1016/j.cllc.2018.08.015" target="_blank">https://doi.org/10.1016/j.cllc.2018.08.015</a></li>
+                    <li>Government of Canada (2022) Health Effects of the Chernobyl Accident. <a href="https://www.cnsc-ccsn.gc.ca/eng/resources/health/health-effects-chemobyl-accident/" target="_blank">https://www.cnsc-ccsn.gc.ca/eng/resources/health/health-effects-chemobyl-accident/</a></li>
+                    <li>Hall & Giaccia (2019) <em>Radiobiology for the radiologist</em> (8th ed.). Wolters Kluwer.</li>
+                    <li>Huppmann et al. (2010) Radiation Risks from Exposure to Chest Computed Tomography. <em>Seminars in Ultrasound, CT and MRI</em>, 31(1), 14-28. <a href="https://doi.org/10.1053/j.sult.2009.09.003" target="_blank">https://doi.org/10.1053/j.sult.2009.09.003</a></li>
+                    <li>Larke et al. (2011) Estimated Radiation Dose Associated With Losw-Dose Chest CT of Average-Size Participants in the National Lung Screening Trial. <em>American Journal of Roentgenology</em>, 197(5), 1165-1169. <a href="https://doi.org/10.2214/ajr.11.6533" target="_blank">https://doi.org/10.2214/ajr.11.6533</a></li>
+                    <li>Lee (2020) Radiation therapy for lung cancer. Canadian Cancer Society. <a href="https://cancer.ca/en/cancer-information/cancer-types/lung/treatment/radiation-therapy" target="_blank">https://cancer.ca/en/cancer-information/cancer-types/lung/treatment/radiation-therapy</a></li>
+                    <li>Lin (2010) Radiation Risk From Medical Imaging. <em>Mayo Clinic Proceedings</em>, 85(12), 1142-1146. <a href="https://doi.org/10.4065/mcp.2010.0260" target="_blank">https://doi.org/10.4065/mcp.2010.0260</a></li>
+                    <li>Majeed & Gupta (2023) Adverse Effects Of Radiation Therapy. <em>PubMed; StatPearls Publishing</em>. <a href="https://www.ncbi.nlm.nih.gov/books/NBK563259/" target="_blank">https://www.ncbi.nlm.nih.gov/books/NBK563259/</a></li>
+                    <li>National Cancer Institute (2018) External Beam Radiation Therapy for Cancer. <a href="https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/external-beam" target="_blank">https://www.cancer.gov/about-cancer/treatment/types/radiation-therapy/external-beam</a></li>
+                    <li>National Cancer Institute (2024) Computed Tomography (CT) Scans and Cancer Fact Sheet. <a href="https://www.cancer.gov/about-cancer/diagnosis-staging/ct-scans-fact-sheet" target="_blank">https://www.cancer.gov/about-cancer/diagnosis-staging/ct-scans-fact-sheet</a></li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer>
