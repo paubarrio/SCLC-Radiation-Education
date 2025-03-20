@@ -5,40 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Managing Risks - Radiation Protection</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional CSS for the accordion effect */
-        .accordion {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin: 10px 0;
-            padding: 15px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .accordion:hover {
-            background-color: #f1f1f1;
-        }
-
-        .accordion.active {
-            background-color: #eb9b9b;
-            color: white;
-        }
-
-        .panel {
-            display: none;
-            padding: 10px 20px;
-            background-color: white;
-            border-radius: 0 0 10px 10px;
-            border: 1px solid #ddd;
-            border-top: none;
-        }
-
-        .panel.show {
-            display: block;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -62,10 +28,8 @@
     <section id="Managing-risks">
         <div class="container">
             <!-- General Precautions -->
-            <div class="accordion" onclick="toggleAccordion(this)">
+            <div class="card">
                 <h2>General Precautions</h2>
-            </div>
-            <div class="panel">
                 <img src="images/lead-apron.png" alt="Lead Apron Use" class="symptom-image">
                 <p class="image-credit">Image Source: The Essential Physics of Medical Imaging, Fourth Edition (Bushberg)</p>
                 <ul>
@@ -95,10 +59,8 @@
             </div>
 
             <!-- Symptom-Specific Precautions -->
-            <div class="accordion" onclick="toggleAccordion(this)">
+            <div class="card">
                 <h2>Symptom-Specific Precautions</h2>
-            </div>
-            <div class="panel">
                 <ul>
                     <li><strong>Probiotics for Diarrhea:</strong>
                         <ul>
@@ -124,10 +86,8 @@
             </div>
 
             <!-- Effects of Radiation Content -->
-            <div class="accordion" onclick="toggleAccordion(this)">
+            <div class="card">
                 <h2>Effects of Radiation</h2>
-            </div>
-            <div class="panel">
                 <h3>Radiography</h3>
                 <p><strong>Who is most at risk of developing SCLC?</strong></p>
                 <ul>
@@ -209,10 +169,8 @@
             </div>
 
             <!-- References -->
-            <div class="accordion" onclick="toggleAccordion(this)">
+            <div class="card">
                 <h2>References</h2>
-            </div>
-            <div class="panel">
                 <ul class="references">
                     <li>Cheon, B. K., et al. (2018). Radiation safety: A focus on lead aprons. <em>Korean Journal of Pain</em>.</li>
                     <li>Hall, E. J., & Giaccia, A. J. (2019). <em>Radiobiology for the Radiologist</em>.</li>
@@ -238,23 +196,5 @@
     <footer>
         <p>&copy; 2025 Radiation Protection. Brought to you by Medradsc 2X03.</p>
     </footer>
-
-    <script>
-        // JavaScript to handle the accordion functionality
-        function toggleAccordion(element) {
-            // Toggle the "active" class to change the color of the clicked section
-            element.classList.toggle("active");
-
-            // Get the panel (content) that follows the clicked accordion
-            const panel = element.nextElementSibling;
-
-            // Toggle the display of the panel
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        }
-    </script>
 </body>
 </html>
