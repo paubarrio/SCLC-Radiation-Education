@@ -21,6 +21,10 @@ jobs:
       # - name: Install dependencies
       #   run: npm install
       #   working-directory: ./path/to/your/project # Comment out or remove this step
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './'  # Upload the entire repository (or specify the folder with your static files)
 
       - name: Build project
         run: npm run build
