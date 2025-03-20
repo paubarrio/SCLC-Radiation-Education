@@ -25,7 +25,7 @@ jobs:
   # Single deploy job since we're just deploying
   deploy:
     environment:
-      name: Github-pages
+      name: SCLC-Radiation-Education
       url: https://paubarrio.github.io/SCLC-Radiation-Education/Managing-risks.html
     runs-on: ubuntu-latest
     steps:
