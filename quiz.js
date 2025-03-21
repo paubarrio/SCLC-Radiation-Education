@@ -30,6 +30,16 @@ const quizData = [
         correct: 2
     },
     {
+        question: "What is a common age range for individuals diagnosed with Small Cell Lung Cancer (SCLC)?",
+        options: [
+          "Teenagers and young adults",
+          "Mid-30s to early 40s",
+          "Early to late 60s",
+          "Over 80"
+        ],
+        correct: 2
+    },
+    {
         question: "Which of the following fractionation schedules is often used for Limited-Stage SCLC?",
         options: [
           "45 Gy in 30 fractions, given twice daily (1.5 Gy per fraction)",
@@ -48,6 +58,16 @@ const quizData = [
             "Both men and women receive only about 0.5 mSv"
      ],
         correct: 1
+    },
+    {
+        question: "What percentage of all lung cancer cases does SCLC represent?",
+        options: [
+          "About 14%",
+          "About 5%",
+          "About 50%",
+          "About 30%"
+        ],
+        correct: 0
     },
     {
         question: "What is the primary aim of Prophylactic Cranial Irradiation (PCI) in SCLC?",
