@@ -35,7 +35,7 @@ header h1 {
 .leaf-top-left {
     top: 0;       
     left: 0; 
-    width: 4rem;          
+    width: 3.5rem;          
     height: auto;     
     transform: translate(15%, 20%); 
     z-index: 0;
