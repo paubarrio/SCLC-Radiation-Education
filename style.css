@@ -84,18 +84,17 @@ section {
 
 footer {
     text-align: center;
-    padding: 2px 0;
-    background: #333;
-    color: #fff; opacity: 0.9;
-    position: bottom;
+    padding: 1px 0;
+    background: #ffffff; opacity: 0.6;
+    color: #ffffff;
+    position: relative;
     width: 100%;
-    bottom: 0px;
-    font-size: 0.5em; 
-    height: 20px; 
-    line-height: 0px; /* line spacing */
-    z-index: 1000; /* stay above content*/
+    bottom: 0;
+    font-size: 0.5em; /* Smaller text */
+    height: 40px; /* Reduced height */
+    line-height: 1; /* Tighter line spacing */
+    z-index: 1000; /* Ensures footer stays above content */
 }
-
 
 /* Form Styles */
 form {
@@ -345,19 +344,6 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
-    opacity: 0.9;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9em;
-    margin-top: 40px;
-}
 
 /* Add these styles to your existing CSS file */
 
@@ -428,19 +414,7 @@ ul li {
     margin-bottom: 10px;
 }
 
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
-    opacity: 0.9;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9em;
-    margin-top: 40px;
-}
+
 
 /* Add more color to headers and text */
  h2, h3, h4 {
@@ -451,3 +425,62 @@ p {
     color: #555;
 }
 
+/* Additional CSS for the accordion effect */
+/* Additional CSS for the accordion effect */
+.accordion {
+    background-color: #f9c6c6; /* Lighter pink background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #333; /* Darker text color for contrast */
+}
+
+.accordion:hover {
+    background-color: #f1b6b6; /* Slightly darker pink on hover */
+}
+
+.accordion.active {
+    background-color: #eb9b9b; /* Original pink for active state */
+}
+
+.accordion.active h2,
+.accordion.active h3,
+.accordion.active h4 {
+    color: white !important; /* Force white text for active state */
+}
+
+.panel {
+    display: none;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+    margin-bottom: 10px; /* Add space between panels */
+}
+
+.panel.show {
+    display: block;
+}
+
+/* Ensure the header stays fixed at the top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #eb9b9b;
+    padding: 10px 0;
+}
+
+/* Add padding to the top of the section to prevent content from being hidden under the header */
+section {
+    padding-top: 80px; /* Adjust this value based on the height of your header */
+}
+
+/* Default heading styles */
+h2, h3, h4 {
+    color: #eb9b9b; /* Default pink color for headings */
+}
