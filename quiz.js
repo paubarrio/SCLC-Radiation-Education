@@ -1,18 +1,18 @@
 const quizData = [
     {
-        question: "Which source accounts for the largest contribution to man-made radiation exposure?",
-        options: ["Radon & Thoron", "Medical uses", "Smoke detectors", "Nuclear power plants"],
+        question: "What type of radiation is used in a CT scan for diagnosing SCLC?",
+        options: ["Gamma rays", "X-rays", "Ultraviolet radiation", "Non-ionizing radiation"],
         correct: 1
     },
     {
-        question: "What is the principle of radiation protection that involves minimizing time spent near a radiation source?",
-        options: ["Time", "Distance", "Shielding", "ALARA"],
-        correct: 0
+        question: "Which of the following describes a key characteristic of ionizing radiation?",
+        options: ["Emits visible light", "Releases a small amount of localized energy", "Causes orbital electrons to be ejected", " Only affects surface tissues"],
+        correct: 2
     },
     {
-        question: "Which device is used to measure radiation exposure?",
-        options: ["Geiger Counter", "Thermometer", "Barometer", "Spectrometer"],
-        correct: 0
+        question: "Which particle type in radiation therapy is best for superficial tumors?",
+        options: ["Photons", "Protons", "Electrons", "Neutrons"],
+        correct: 2
     }
 ];
 
