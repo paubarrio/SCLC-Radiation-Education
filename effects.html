@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effects of Radiation - Radiation Protection</title>
+    <title>Effects - Radiation Protection</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional CSS for the accordion effect */
+        /* Additional CSS for the accordion effect */
+        .accordion {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion:hover {
+            background-color: #f1f1f1;
+        }
+
+        .accordion.active {
+            background-color: #eb9b9b;
+            color: white;
+        }
+
+        .panel {
+            display: none;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 0 0 10px 10px;
+            border: 1px solid #ddd;
+            border-top: none;
+            margin-bottom: 10px; /* Add space between panels */
+        }
+
+        .panel.show {
+            display: block;
+        }
+
+        /* Ensure the header stays fixed at the top */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #eb9b9b;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Effects of Radiation</h1>
+        <h1>Effects</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-btn">Home</a></li>
@@ -21,40 +66,122 @@
                 <li><a href="effects.html" class="nav-btn">Effects</a></li>
             </ul>
         </nav>
-        <!-- Leaf images -->
         <img src="images/leaf-1.png" alt="Leaf Decoration" class="leaf leaf-top-left">
         <img src="images/leaf-2.png" alt="Leaf Decoration" class="leaf leaf-bottom-right">
     </header>
 
     <section id="effects">
         <div class="container">
-            <h2>Effects of Radiation Exposure</h2>
-            <p>Radiation exposure during SCLC diagnosis and treatment can have both immediate and long-term effects. Here's an overview:</p>
-
-            <div class="card">
-                <h3>Immediate Effects</h3>
+            <!-- General Precautions -->
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <h2>General Precautions</h2>
+            </div>
+            <div class="panel">
+                <p>There are many methods our radiographic procedures ensure radiation safety for the patients.</p>
                 <ul>
-                    <li><strong>Skin Reactions:</strong> Redness, dryness, and pigmentation changes may occur at the site of radiation exposure (Majeed & Gupta, 2023).</li>
-                    <li><strong>Fatigue:</strong> A common side effect of radiation therapy, often due to the body's response to treatment (Lee, 2020).</li>
-                    <li><strong>Nausea and Vomiting:</strong> These symptoms may occur, especially if radiation is directed near the stomach or esophagus (Majeed & Gupta, 2023).</li>
+                    <li><strong>Use of Lead</strong>
+                        <ul>
+                            <li>We provide both lead aprons and lead collars when appropriate during radiographic exams.</li>
+                            <li>The lead, around 0.5mm thick, is capable of reducing scatter radiation by about 90% (Cheon et al., 2018).</li>
+                            <li>Radiographic procedures themselves are rather low doses of radiation (range), so effects are already unlikely (Hall & Giaccia, 2019).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Distance</strong>
+                        <ul>
+                            <li>Inverse-square law (Lakhwani et al., 2018)
+                                <ul>
+                                    <li>The intensity of the X-ray beam is proportional to the reciprocal of the distance squared.</li>
+                                    <li>Essentially saying that the further away someone is from the source of radiation, the lower the intensity of the radiation reaching the person.</li>
+                                </ul>
+                            </li>
+                            <li>Radiation technologists try their best to optimize distance so there is sufficient exposure for good image quality while minimizing dose to patients.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Fractionation</strong>
+                        <ul>
+                            <li>Primarily used in radiation therapy rather than radiography.</li>
+                            <li>Fractionating dose delivery allows for cells to recover while the area of interest still receives a sufficient dose for treatment (Hall & Giaccia, 2019).</li>
+                            <li>This limits the effects of what we want to treat, and the rest of the body’s cells remain unharmed.</li>
+                        </ul>
+                    </li>
+                    <li><strong>ALARA Principle</strong>
+                        <ul>
+                            <li>This is the “As Low As Reasonably Achievable” principle, where hospitals and radiation workers work to limit exposure to patients as much as possible without compromising image quality.</li>
+                            <li>A study conducted by Safrullah et al. (2017) concluded that around 99% of hospitals that completed their survey recognized the ALARA principle.</li>
+                            <li>84% affirmed the beneficial use of lead protection (Safrullah et al., 2017).</li>
+                        </ul>
+                    </li>
+                </ul>
+                <img src="images/lead-apron.png" alt="Lead Apron Use" class="symptom-image">
+                <p class="image-credit">Image Source: The Essential Physics of Medical Imaging, Fourth Edition (Bushberg)</p>
+            </div>
+
+            <!-- Symptom-Specific Precautions -->
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <h2>Symptom-Specific Precautions</h2>
+            </div>
+            <div class="panel">
+                <h3>Probiotics to Mitigate RT-Induced Diarrhea (Stubbe & Valero, 2013)</h3>
+                <ul>
+                    <li>Specifically 1 sachet VSL#3
+                        <ul>
+                            <li>A study of treatment vs. placebo candidates showed promising results of true effect in reducing diarrhea post-RT treatment.</li>
+                            <li>Treatment candidates had fewer bowel movements.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>Exercise to Mitigate Fatigue (Stubbe & Valero, 2013)</h3>
+                <ul>
+                    <li>Regular exercise has been proven to reduce fatigue post-irradiation (RT).</li>
+                    <li>This applies to patients with cancers at multiple stages.</li>
+                    <li>Healthcare providers should be the ones creating the exercise plans.</li>
+                </ul>
+
+                <h3>Calendula to Reduce Skin Toxicity (Stubbe & Valero, 2013)</h3>
+                <ul>
+                    <li>Depending on the dose, skin toxicity ranges from inflammation and reddening to ulcerations and fibrosis (Hall & Giaccia, 2019).</li>
+                    <li>This is a topical steroid with statistical significance indicating a reduction in the occurrence of high toxicity of the skin.</li>
+                </ul>
+
+                <h3>Systemic Steroids for Pneumonitis & Others</h3>
+                <ul>
+                    <li>Pneumonitis can arise due to multiple causal factors, so it is important to receive proper assessments to rule out other reasons for acute respiratory distress (Majeed & Gupta, 2023).</li>
+                    <li>Corticosteroids can help reduce pulmonary inflammation in cases of pneumonia (Stern et al., 2017).</li>
+                    <li>It can also be used for cases of inflammation, nausea, and vomiting (Anderson et al., 2021).
+                        <ul>
+                            <li>This includes:
+                                <ul>
+                                    <li>Dexamethasone (Decadron)</li>
+                                    <li>Methylprednisolone (Medrol)</li>
+                                    <li>Prednisone</li>
+                                    <li>Hydrocortisone</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Should be used sparingly due to its addictive properties (Majeed & Gupta, 2023).
+                        <ul>
+                            <li>Decrease consumption amount/dosage of corticosteroids throughout usage (starting high but decreasing over time).</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 
-            <div class="card">
-                <h3>Long-Term Effects</h3>
-                <ul>
-                    <li><strong>Pulmonary Toxicity:</strong> Radiation can cause inflammation of lung tissue (pneumonitis) and scarring, leading to chronic breathing difficulties (Lee, 2020).</li>
-                    <li><strong>Cardiac Issues:</strong> Radiation near the heart can lead to swelling of the tissue surrounding the heart, causing pain and abnormal heart rhythms (Majeed & Gupta, 2023).</li>
-                    <li><strong>Secondary Cancers:</strong> Long-term exposure to radiation may slightly increase the risk of developing other cancers later in life (Bach et al., 2012).</li>
-                </ul>
+            <!-- References -->
+            <div class="accordion" onclick="toggleAccordion(this)">
+                <h2>References</h2>
             </div>
-
-            <div class="card">
-                <h3>Managing Side Effects</h3>
-                <ul>
-                    <li><strong>Probiotics:</strong> Can help mitigate radiation-induced diarrhea (Stubbe & Valero, 2013).</li>
-                    <li><strong>Exercise:</strong> Regular physical activity can reduce fatigue and improve overall well-being during treatment (Stubbe & Valero, 2013).</li>
-                    <li><strong>Calendula Cream:</strong> A topical treatment that can reduce skin toxicity caused by radiation (Stubbe & Valero, 2013).</li>
+            <div class="panel">
+                <ul class="references">
+                    <li>Anderson, P. M., Thomas, S. M., Sartoski, S., Scott, J. G., Sobilo, K., Bewley, S., Salvador, L. K., & Salazar-Abshire, M. (2021). Strategies to mitigate chemotherapy and radiation toxicities that affect eating. <em>Nutrients</em>, <em>13</em>(12), 4397. doi: 10.3390/nu13124397</li>
+                    <li>Cheon, B. K., Kim, C. L., Kim, K. R., Kang, M. H., Lim, J. A., Woo, N. S., Rhee, K. Y., Kim, H. K., & Kim, J. H. (2018). Radiation safety: A focus on lead aprons and thyroid shields in Interventional Pain Management. <em>The Korean Journal of Pain</em>, <em>31</em>(4), 244-252. doi: 10.3344/kjp.2018.31.4.244</li>
+                    <li>Hall, E. J., & Giaccia, A. J. (2019). <em>Radiobiology for the radiologist (8th ed.)</em>. Wolters Kluwer.</li>
+                    <li>Lakhwani, O. P., Dalal, V., Jindal, M., & Nagala, A. (2019). Radiation Protection and Standardization. <em>Journal of Clinical Orthopaedics and Trauma</em>, <em>10</em>(4), 738-743. doi: 10.1016/j.jcot.2018.08.010</li>
+                    <li>Majeed, H., & Gupta, V. (2023). Adverse Effects of Radiation Therapy. In: StatPearls [Internet]. <em>Treasure Island (FL): StatPearls Publishing</em>, Available from: <a href="https://www.ncbi.nlm.nih.gov/sites/books/NBK563259/" target="_blank">https://www.ncbi.nlm.nih.gov/sites/books/NBK563259/</a></li>
+                    <li>Safiullah, S., Patel, R., Uribe, B., Spradling, K., Lall, C., Zhang, L., Okhumov, Z., Clayman, R. V., & Landman, J. (2017). Prevalence of protective shielding utilization for radiation dose reduction in adult patients undergoing body scanning using computed tomography. <em>Journal of Endourology</em>, <em>31</em>(10), 985-990. doi: 10.1089/end.2017.0294</li>
+                    <li>Stern, A., Skalsky, K., Avni, T., Carrara, E., Leibovici, L., & Paul, M. (2017). Corticosteroids for pneumonia. <em>Cochrane Database of Systematic Reviews</em>, <em>2017</em>(12). doi: 10.1002/14651858.cd007720.pub3</li>
+                    <li>Stubbe, C. E., & Valero, M. (2013). Complementary strategies for the management of radiation therapy side effects. <em>Journal of the Advanced Practitioner in Oncology</em>, <em>4</em>(4). doi: 10.6004/jadpro.2013.4.4.3</li>
                 </ul>
             </div>
         </div>
@@ -63,5 +190,23 @@
     <footer>
         <p>&copy; 2025 Radiation Protection. Brought to you by Medradsc 2X03.</p>
     </footer>
+
+    <script>
+        // JavaScript to handle the accordion functionality
+        function toggleAccordion(element) {
+            // Toggle the "active" class to change the color of the clicked section
+            element.classList.toggle("active");
+
+            // Get the panel (content) that follows the clicked accordion
+            const panel = element.nextElementSibling;
+
+            // Toggle the display of the panel
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
