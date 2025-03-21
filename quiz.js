@@ -30,6 +30,16 @@ const quizData = [
         correct: 2
     },
     {
+        question: "What is Calendula cream used for in radiation treatment?",
+        options: [
+          "To improve breathing",
+          "To boost energy",
+          "To reduce skin toxicity",
+          "To improve hair growth"
+        ],
+        correct: 2
+    },
+    {
         question: "What is a common age range for individuals diagnosed with SCLC?",
         options: [
           "Teenagers and young adults",
@@ -66,16 +76,6 @@ const quizData = [
           "Sleeping all day",
           "Regular exercise",
           "Massage therapy"
-        ],
-        correct: 2
-    },
-    {
-        question: "What is Calendula cream used for in radiation treatment?",
-        options: [
-          "To improve breathing",
-          "To boost energy",
-          "To reduce skin toxicity",
-          "To improve hair growth"
         ],
         correct: 2
     },
