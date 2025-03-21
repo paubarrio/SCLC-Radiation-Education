@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparing Populations - Radiation Protection</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Additional CSS for the accordion effect */
-        /* Additional CSS for the accordion effect */
-        .accordion {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            margin: 10px 0;
-            padding: 15px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .accordion:hover {
-            background-color: #f1f1f1;
-        }
-
-        .accordion.active {
-            background-color: #eb9b9b;
-            color: white;
-        }
-
-        .panel {
-            display: none;
-            padding: 10px 20px;
-            background-color: white;
-            border-radius: 0 0 10px 10px;
-            border: 1px solid #ddd;
-            border-top: none;
-            margin-bottom: 10px; /* Add space between panels */
-        }
-
-        .panel.show {
-            display: block;
-        }
-
-        /* Ensure the header stays fixed at the top */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            background-color: #eb9b9b;
-            padding: 10px 0;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comparing populations - Radiation Protection</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Additional CSS for the accordion effect */
+            /* Additional CSS for the accordion effect */
+            .accordion {
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                margin: 10px 0;
+                padding: 15px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+    
+            .accordion:hover {
+                background-color: #f1f1f1;
+            }
+    
+            .accordion.active {
+                background-color: #eb9b9b;
+                color: white;
+            }
+    
+            .panel {
+                display: none;
+                padding: 10px 20px;
+                background-color: white;
+                border-radius: 0 0 10px 10px;
+                border: 1px solid #ddd;
+                border-top: none;
+                margin-bottom: 10px; /* Add space between panels */
+            }
+    
+            .panel.show {
+                display: block;
+            }
+    
+            /* Ensure the header stays fixed at the top */
+            header {
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                background-color: #eb9b9b;
+                padding: 10px 0;
+            }
+        </style>
+    </head>
 <body>
-    <header>
-        <h1>Comparing Populations</h1>
+  <header>
+      <h1>Comparing Populations</h1>
         <nav>
             <ul>
                 <li><a href="index.html" class="nav-btn">Home</a></li>
@@ -70,198 +70,250 @@
         <img src="images/leaf-2.png" alt="Leaf Decoration" class="leaf leaf-bottom-right">
     </header>
 
-    <section id="comparing-populations">
-        <div class="container">
-            <!-- Age-Related Sensitivity to Radiation -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Age-Related Sensitivity to Radiation</h2>
-            </div>
-            <div class="panel">
-                <h3>Children’s susceptibility to radiation-induced harm:</h3>
-                <ul>
-                    <li><strong>Rapidly dividing cells:</strong> Children have more rapidly dividing cells, making them more susceptible to radiation-induced damage.</li>
-                    <li><strong>Longer post-exposure lifespan:</strong> Children have a longer lifespan post-exposure, allowing more time for potential malignancies to develop (Morgan, 2003).</li>
-                    <li><strong>Higher relative risk:</strong> Procedures like chest CT scans (10 mSv dose) pose a higher relative risk of radiation-induced damage in children.</li>
-                </ul>
+  <section id="comparing-populations" class="container">
+    
+    <!-- Intro / Management -->
+    <div class="accordion" onclick="toggleAccordion(this)">
+      <h2>The Management of Small Cell Lung Cancer and Radiation Exposure</h2>
+    </div>
+    <div class="panel">
+      <p>
+        The management of small cell lung cancer (SCLC) involves various diagnostic and 
+        therapeutic procedures that expose patients to ionizing radiation, including radiographs, 
+        computed tomography (CT) scans, positron emission tomography (PET) scans, CT-guided 
+        fine needle aspirations, and radiation therapy. These procedures are essential for 
+        diagnosing the disease and planning treatment, but they also contribute to a 
+        cumulative radiation dose, which can influence both the efficacy of treatment and the 
+        risk of adverse effects (Bach et al., 2012). The amount of radiation a patient receives 
+        varies depending on factors such as age, body composition, and lifestyle, each of which 
+        can affect how radiation impacts the body.
+      </p>
+    </div>
 
-                <h3>Adults’ susceptibility to radiation-induced harm:</h3>
-                <ul>
-                    <li><strong>Immediate side effects:</strong> Adults are at increased risk of immediate side effects, such as pulmonary toxicity.</li>
-                    <li><strong>Comorbidities:</strong> Pulmonary toxicity may be exacerbated by comorbidities (Howard, 2019).</li>
-                </ul>
-
-                <h3>Therapeutic planning for SCLC:</h3>
-                <ul>
-                    <li><strong>Adjustments for age:</strong> Radiation dosing should be adjusted to account for differences in radiation vulnerability between children and older adults.</li>
-                    <li><strong>Efficacy and safety:</strong> Ensure diagnostic and treatment efficacy while minimizing risks.</li>
-                </ul>
-            </div>
-
-            <!-- Impact of Body Habitus -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Impact of Body Habitus</h2>
-            </div>
-            <div class="panel">
-                <h3>Obese patients:</h3>
-                <ul>
-                    <li><strong>Higher radiation doses:</strong> Obese patients may require higher radiation doses to achieve diagnostic image quality.</li>
-                    <li><strong>Increased exposure:</strong> Higher doses lead to increased radiation exposure (Lomaeva et al., 2011).</li>
-                </ul>
-
-                <h3>Patients with lower body mass:</h3>
-                <ul>
-                    <li><strong>Higher organ doses:</strong> Patients with lower body mass may receive higher doses to organs relative to body size.</li>
-                    <li><strong>Concentrated damage:</strong> Small body habitus may result in more concentrated radiation damage in organs like the lungs.</li>
-                </ul>
-
-                <h3>Adjustments in imaging protocols:</h3>
-                <ul>
-                    <li><strong>Varying doses:</strong> Radiation doses (specifically mAs values) should be adjusted based on body size.</li>
-                    <li><strong>Optimization:</strong> Use different modalities, such as low-dose CT, to optimize dose and minimize risks (Bach et al., 2012).</li>
-                </ul>
-            </div>
-
-            <!-- Lifestyle Factors: Smoking -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Lifestyle Factors: Smoking</h2>
-            </div>
-            <div class="panel">
-                <h3>Smoking and radiation-induced lung cancer:</h3>
-                <ul>
-                    <li><strong>Increased risk:</strong> Smoking significantly increases the risk of radiation-induced lung cancer.</li>
-                    <li><strong>Carcinogens:</strong> Both tobacco smoke and radiation are known carcinogens.</li>
-                </ul>
-
-                <h3>For SCLC patients who smoke:</h3>
-                <ul>
-                    <li><strong>Increased toxicity:</strong> The likelihood of developing radiation-induced lung toxicity increases (Woodman, 2002).</li>
-                    <li><strong>Exacerbated symptoms:</strong> This can lead to exacerbated pulmonary symptoms such as difficulty breathing and chest pain following radiation exposure.</li>
-                </ul>
-
-                <h3>Combined effects:</h3>
-                <ul>
-                    <li><strong>Secondary malignancies:</strong> The combined effects of smoking and radiation therapy increase the risk of secondary malignancies, including radiation-induced cancers.</li>
-                </ul>
-
-                <h3>Healthcare advice:</h3>
-                <ul>
-                    <li><strong>Smoking cessation:</strong> Encourage smoking cessation prior to and during treatment.</li>
-                    <li><strong>Monitoring:</strong> Monitor for complications related to smoking and radiation exposure (Shaw et al., 2011).</li>
-                </ul>
-            </div>
-
-            <!-- Tumor Location within the Lung -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Tumor Location within the Lung</h2>
-            </div>
-            <div class="panel">
-                <h3>Tumor location and radiation exposure:</h3>
-                <ul>
-                    <li><strong>Critical structures:</strong> Tumors near critical structures (heart, esophagus, central airways) need careful planning (Morgan, 2003).</li>
-                </ul>
-
-                <h3>Example: Small Cell Lung Cancer:</h3>
-                <ul>
-                    <li><strong>Central bronchial region:</strong> Located in the central bronchial region, requiring precise radiation therapy to minimize damage to the heart and large blood vessels.</li>
-                </ul>
-
-                <h3>Advanced Radiation Techniques:</h3>
-                <ul>
-                    <li><strong>IMRT and proton therapy:</strong> Intensity-modulated radiation therapy (IMRT) and proton therapy allow for precise targeting and higher doses to the tumor while sparing surrounding tissues from excessive radiation (Lomaeva et al., 2011).</li>
-                    <li><strong>Reduced side effects:</strong> These methods reduce the risk of side effects like cardiac arrhythmias and esophageal injury, improving the patient’s quality of life.</li>
-                </ul>
-            </div>
-
-            <!-- Pregnancy -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Pregnancy</h2>
-            </div>
-            <div class="panel">
-                <h3>Radiation exposure during pregnancy:</h3>
-                <ul>
-                    <li><strong>Fetal risks:</strong> Poses significant risks to the developing fetus, including congenital malformations, growth retardation, and increased risk of cancer later in life (Shaw et al., 2011).</li>
-                </ul>
-
-                <h3>Timing of radiation exposure:</h3>
-                <ul>
-                    <li><strong>Early-stage exposure:</strong> Early-stage exposure may lead to more severe outcomes.</li>
-                </ul>
-
-                <h3>For pregnant patients with SCLC:</h3>
-                <ul>
-                    <li><strong>Postponement:</strong> Radiation-based imaging and treatments are typically postponed until after delivery, unless clinically necessary.</li>
-                    <li><strong>Alternative imaging:</strong> In non-urgent cases, alternative imaging modalities like ultrasound and MRI are preferred to avoid harm to the fetus.</li>
-                </ul>
-
-                <h3>When radiation therapy is required:</h3>
-                <ul>
-                    <li><strong>Careful planning:</strong> Careful planning is needed to minimize fetal exposure.</li>
-                    <li><strong>Specialized centers:</strong> Patients are often referred to specialized centers with expertise in managing radiation therapy during pregnancy.</li>
-                </ul>
-            </div>
-
-            <!-- Genetic Predisposition to Cancer -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>Genetic Predisposition to Cancer</h2>
-            </div>
-            <div class="panel">
-                <h3>Genetic mutations and cancer predisposition:</h3>
-                <ul>
-                    <li><strong>Increased sensitivity:</strong> Individuals with genetic mutations, like BRCA mutations, are more sensitive to the carcinogenic effects of ionizing radiation (Morgan, 2003).</li>
-                </ul>
-
-                <h3>Special consideration for patients with genetic mutations:</h3>
-                <ul>
-                    <li><strong>Minimizing exposure:</strong> Strategies include using the lowest possible radiation dose and opting for non-ionizing imaging techniques when feasible.</li>
-                    <li><strong>Targeted therapies:</strong> Targeted therapies may be used to reduce reliance on radiation and its associated risks.</li>
-                </ul>
-            </div>
-
-            <!-- In Simple Words for You! -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>In Simple Words for You!</h2>
-            </div>
-            <div class="panel">
-                <p>The cumulative radiation dose from the diagnosis and treatment of small cell lung cancer is influenced by various patient-specific factors, including age, body habitus, lifestyle choices, tumor location, pregnancy status, and genetic predispositions. As radiation exposure plays a crucial role in both diagnosing and treating this aggressive cancer, personalized treatment planning and advanced radiation delivery techniques are essential for optimizing therapeutic outcomes while minimizing the risks of adverse effects. Ongoing research into radiotherapy techniques and protective measures is vital to improving the safety and efficacy of SCLC treatments, ensuring better outcomes for all patients, regardless of their individual risk factors.</p>
-            </div>
-
-            <!-- References -->
-            <div class="accordion" onclick="toggleAccordion(this)">
-                <h2>References</h2>
-            </div>
-            <div class="panel">
-                <ul class="references">
-                    <li>Bach, P. B., Mirkin, J. N., Oliver, T. K., Azzoli, C. G., Berry, D. A., Brawley, O. W., Byers, T., Colditz, G. A., Gould, M. K., Jett, J. R., Sabichi, A. L., Smith-Bindman, R., Wood, D. E., Qaseem, A., & Detterbeck, F. C. (2012). Benefits and harms of CT screening for Lung Cancer. <em>JAMA</em>, <em>307</em>(22), 2418. doi: 10.1001/jama.2012.5521</li>
-                    <li>Howard, L. (2019). Acute pulmonary embolism. <em>Clinical Medicine</em>, <em>19</em>(3), 243–247. doi: 10.7861/climmedicine.19-3-247</li>
-                    <li>Lomaeva, M.G., Vasil'eva, G.V., Fomenko, L.A., Antipova, V.N., Gaziev, A.I., Bezlepkin, V.G. (2011). [Increased genomic instability in somatic cells of the progeny of female mice exposed to acute X-radiation in the preconceptional period]. <em>Genetika</em>, <em>47</em>(10):1371-7. Russian. PMID: 22232925.</li>
-                    <li>Morgan, W.F. (2003). Non-targeted and delayed effects of exposure to ionizing radiation: II. Radiation-induced genomic instability and bystander effects in vivo, elastogenic factors and transgenerational effects. <em>Radiat Res</em>, <em>159</em>(5):581-96. doi: 10.1667/0033-7587(2003)159[0581:nadeoe]2.0.co;2. PMID: 12710869.</li>
-                    <li>Shaw, P., Duncan, A., Vouyouka, A., & Ozsvath, K. (2011). Radiation exposure and pregnancy. <em>Journal of Vascular Surgery</em>, <em>53</em>(1). doi: 10.1016/j.jvs.2010.05.140</li>
-                    <li>Woodman, I. (2002). Breastfeeding reduces risk of breast cancer, says study. <em>BMJ</em>, <em>325</em>(7357), 184c–1184. doi: 10.1136/bmj.325.7357.184/c</li>
-                </ul>
-            </div>
+   <!-- 2) Age-Related Sensitivity to Radiation -->
+    <!-- Age-Related Sensitivity to Radiation -->
+    <div class="accordion" onclick="toggleAccordion(this)">
+        <h2>Age-Related Sensitivity to Radiation</h2>
+    </div>
+    <div class="panel">
+        <div class="content-grid">
+        <div class="text-content">
+            <h3>Children’s susceptibility to radiation-induced harm:</h3>
+            <ul>
+            <li>Due to rapidly dividing cells</li>
+            <li>Longer post-exposure lifespan allows more time for potential malignancies to develop (Morgan, 2003)</li>
+            <li>Higher relative risk of radiation-induced damage from procedures like chest CT scan (10 mSv dose)</li>
+            </ul>
+    
+            <h3>Adults’ susceptibility to radiation-induced harm:</h3>
+            <ul>
+            <li>Increased risk of immediate side effects (e.g., pulmonary toxicity)</li>
+            <li>Pulmonary toxicity may be exacerbated by comorbidities (Howard, 2019)</li>
+            </ul>
+    
+            <h3>Therapeutic planning for SCLC:</h3>
+            <ul>
+            <li>Must account for differences in radiation vulnerability between children and older adults</li>
+            <li>Radiation dosing should be adjusted to minimize risks</li>
+            <li>Ensure diagnostic and treatment efficacy</li>
+            </ul>
         </div>
-    </section>
+        <div class="image-content">
+            <!-- Replace 'ages.png' with any relevant image file in your /images folder -->
+            <img src="images/ages.png" alt="Age-Related Sensitivity" class="symptom-image">
+        
+        </div>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Radiation Protection. Brought to you by Medradsc 2X03.</p>
-    </footer>
+  <!-- 3) Impact of Body Habitus -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Impact of Body Habitus</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <h3>Obese patients:</h3>
+        <ul>
+          <li>May require higher radiation doses ... (Lomaeva et al., 2011)</li>
+          <!-- etc. -->
+        </ul>
+        <h3>Patients with lower body mass:</h3>
+        <ul>
+          <li>May receive higher doses to organs ... etc.</li>
+        </ul>
+        <!-- more bullet points from PDF -->
+      </div>
+      <div class="image-content">
+        <img src="images/body-habitus.png" alt="Body Habitus" class="symptom-image">
+        <p class="image-credit">Optional credit</p>
+      </div>
+    </div>
+  </div>
 
-    <script>
-        // JavaScript to handle the accordion functionality
-        function toggleAccordion(element) {
-            // Toggle the "active" class to change the color of the clicked section
-            element.classList.toggle("active");
+  <!-- 4) Lifestyle Factors: Smoking -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Lifestyle Factors: Smoking</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <p>Smoking significantly increases the risk of radiation-induced lung cancer...</p>
+        <ul>
+          <li>Both tobacco smoke & radiation are carcinogens</li>
+        </ul>
+        <h3>For SCLC patients who smoke:</h3>
+        <ul>
+          <li>Likely to develop more lung toxicity (Woodman, 2002)</li>
+        </ul>
+        <!-- etc. from PDF -->
+      </div>
+      <div class="image-content">
+        <img src="images/smoking.png" alt="Smoking" class="symptom-image">
+      </div>
+    </div>
+  </div>
 
-            // Get the panel (content) that follows the clicked accordion
-            const panel = element.nextElementSibling;
+  <!-- 5) Tumor Location within the Lung -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Tumor Location within the Lung</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <h3>Tumor Location:</h3>
+        <ul>
+          <li>Crucial for radiation exposure around heart/esophagus... etc. (Morgan, 2003)</li>
+        </ul>
+        <h3>Advanced Techniques:</h3>
+        <ul>
+          <li>IMRT, proton therapy ... etc.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/tumor-location.png" alt="Tumor Location" class="symptom-image">
+      </div>
+    </div>
+  </div>
 
-            // Toggle the display of the panel
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        }
-    </script>
+  <!-- 6) Pregnancy -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Pregnancy</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <h3>Radiation exposure during pregnancy:</h3>
+        <ul>
+          <li>Poses significant risks to the developing fetus (Shaw et al., 2011)</li>
+          <!-- etc. from PDF -->
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/pregnancy.png" alt="Pregnancy" class="symptom-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- 7) Genetic Predisposition to Cancer -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Genetic Predisposition to Cancer</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <h3>Genetic mutations:</h3>
+        <ul>
+          <li>BRCA mutations increase sensitivity to radiation (Morgan, 2003)</li>
+          <!-- etc. from PDF -->
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/genetics.png" alt="Genetic Predisposition" class="symptom-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- 8) In Simple Words... -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>In Simple Words for You!</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <p>
+          The cumulative radiation dose from the diagnosis and treatment of small cell lung cancer...
+          (rest of PDF text)
+        </p>
+      </div>
+      <div class="image-content">
+        <img src="images/simplified.png" alt="Simple Explanation" class="symptom-image">
+      </div>
+    </div>
+  </div>
+
+  <!-- 9) Radiation Accumulation in SCLC -->
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h2>Radiation Accumulation in Small Cell Lung Cancer Diagnosis + Treatment</h2>
+  </div>
+  <div class="panel">
+    <div class="content-grid">
+      <div class="text-content">
+        <p><strong>Insert video after...:</strong> <a href=\"https://www.youtube.com/watch?v=wKPpIjff5bo\" target=\"_blank\">YouTube Link</a></p>
+        <p><strong>Initial Diagnosis and Imaging:</strong></p>
+        <ul>
+          <li><strong>X-rays:</strong> Quick, minimal radiation, etc.</li>
+          <li><strong>CT Scans:</strong> More radiation than X-rays, but crucial for size/location.</li>
+          <li><strong>PET Scan:</strong> Helps determine spread, small radiation dose, etc.</li>
+        </ul>
+        <p><strong>Biopsy Procedures:</strong></p>
+        <ul>
+          <li><strong>CT-guided Fine Needle Aspiration:</strong> Tissue sample via fine needle + CT guidance.</li>
+        </ul>
+        <p><strong>Insert video after radiation therapy blurb:</strong> <a href=\"https://www.youtube.com/watch?v=zxxrn10a_vI\" target=\"_blank\">YouTube Link</a></p>
+        <p><strong>Radiation Therapy:</strong></p>
+        <ul>
+          <li><strong>External Beam Radiation:</strong> If therapy is planned, targeted external beam to kill or shrink tumors in a localized region, etc.</li>
+        </ul>
+      </div>
+      <div class="image-content">
+        <img src="images/radiation-accumulation.png" alt="Radiation Accumulation" class="symptom-image">
+      </div>
+    </div>
+  </div>
+
+    <!-- References -->
+    <div class="accordion" onclick="toggleAccordion(this)">
+      <h2>References</h2>
+    </div>
+    <div class="panel">
+      <ul class="references">
+        <li>Bach, P. B., Mirkin, J. N., Oliver, T. K., Azzoli, C. G., Berry, D. A., Brawley, O. W., Byers, T., Colditz, G. A., Gould, M. K., Jett, J. R., Sabichi, A. L., Smith-Bindman, R., Wood, D. E., Qaseem, A., & Detterbeck, F. C. (2012). Benefits and harms of CT screening for Lung Cancer. <em>JAMA</em>, 307(22), 2418. doi: 10.1001/jama.2012.5521</li>
+        <li>Howard, L. (2019). Acute pulmonary embolism. <em>Clinical Medicine</em>, 19(3), 243–247. doi: 10.7861/clinmedicine.19-3-247</li>
+        <li>Lomaeva, M.G., Vasil'eva, G.V., Fomenko, L.A., Antipova, V.N., Gaziev, A.I., Bezlepkin, V.G. (2011). [Increased genomic instability in somatic cells of the progeny of female mice exposed to acute X-radiation in the preconceptional period]. <em>Genetika</em>, 47(10):1371-7. Russian. PMID: 22232925.</li>
+        <li>Morgan, W.F. (2003). Non-targeted and delayed effects of exposure to ionizing radiation: II. Radiation-induced genomic instability and bystander effects in vivo, clastogenic factors and transgenerational effects. <em>Radiat Res</em>, 159(5):581-96. doi: 10.1667/0033-7587(2003)159[0581:nadeoe]2.0.co;2. PMID: 12710869.</li>
+        <li>Shaw, P., Duncan, A., Vouyouka, A., & Ozsvath, K. (2011). Radiation exposure and pregnancy. <em>Journal of Vascular Surgery</em>, 53(1). doi: 10.1016/j.jvs.2010.05.140</li>
+        <li>Woodman, I. (2002). Breastfeeding reduces risk of breast cancer, says study. <em>BMJ</em>, 325(7357), 184c–1184. doi: 10.1136/bmj.325.7357.184/c</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Radiation Protection. Brought to you by Medradsc 2X03.</p>
+  </footer>
+
+  <script>
+  // Simple accordion toggle
+  function toggleAccordion(element) {
+    element.classList.toggle('active');
+    const panel = element.nextElementSibling;
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none';
+    } else {
+      panel.style.display = 'block';
+    }
+  }
+  </script>
 </body>
 </html>
