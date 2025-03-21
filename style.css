@@ -35,7 +35,7 @@ header h1 {
 .leaf-top-left {
     top: 0;       
     left: 0; 
-    width: 7rem;          
+    width: 5rem;          
     height: auto;     
     transform: translate(-5%, 0%); 
     z-index: 0;
@@ -46,7 +46,7 @@ header h1 {
 .leaf-bottom-right {
     bottom: 0;   
     right: 0;   
-    width: 5rem;          
+    width: 3rem;          
     height: auto;     
     transform: translate(0%, 0%); /* (had this at 20,20 before) */
     z-index: 0;
