@@ -1,6 +1,6 @@
 /* Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Georgia', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -35,9 +35,9 @@ header h1 {
 .leaf-top-left {
     top: 0;       
     left: 0; 
-    width: 5rem;          
+    width: 3.5rem;          
     height: auto;     
-    transform: translate(-5%, 0%); 
+    transform: translate(15%, 20%); 
     z-index: 0;
     /* move the image further outward to make closer to margin (had this at -20,-20 before) */
 }
@@ -46,9 +46,9 @@ header h1 {
 .leaf-bottom-right {
     bottom: 0;   
     right: 0;   
-    width: 3rem;          
+    width: 4rem;          
     height: auto;     
-    transform: translate(0%, 0%); /* (had this at 20,20 before) */
+    transform: translate(-15%, -10%); /* (had this at 20,20 before) */
     z-index: 0;
 }
 
