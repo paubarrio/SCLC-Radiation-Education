@@ -30,7 +30,7 @@ const quizData = [
         correct: 2
     },
     {
-        question: "What is a common age range for individuals diagnosed with Small Cell Lung Cancer (SCLC)?",
+        question: "What is a common age range for individuals diagnosed with SCLC?",
         options: [
           "Teenagers and young adults",
           "Mid-30s to early 40s",
@@ -48,6 +48,36 @@ const quizData = [
           "10 Gy in 2 fractions (5 Gy per fraction)"
         ],
         correct: 0
+    },
+    {
+        question: "Which of the following was shown to reduce radiation-induced diarrhea in patients?",
+        options: [
+          "Multivitamins",
+          "Protein powder",
+          "VSL#3 probiotic",
+          "Vitamin D"
+        ],
+        correct: 2
+    },
+    {
+        question: "What activity is recommended to help reduce fatigue after radiation therapy?",
+        options: [
+          "Fasting",
+          "Sleeping all day",
+          "Regular exercise",
+          "Massage therapy"
+        ],
+        correct: 2
+    },
+    {
+        question: "What is Calendula cream used for in radiation treatment?",
+        options: [
+          "To improve breathing",
+          "To boost energy",
+          "To reduce skin toxicity",
+          "To improve hair growth"
+        ],
+        correct: 2
     },
     {
         question: "Which statement best reflects the approximate radiation dose from a single chest CT scan for diagnosing SCLC, according to Larke et al. (2011)?",
