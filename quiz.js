@@ -40,6 +40,16 @@ const quizData = [
         correct: 2
     },
     {
+        question: "Why does a smaller radiation dose allow more DNA repair in cells?",
+        options: [
+          "It increases the body’s immune response",
+          "DNA breaks do not occur at all",
+          "It makes chromosomes longer and easier to fix",
+          "It causes fewer DNA breaks, reducing the chance of incorrect rejoining"
+        ],
+        correct: 3
+    },
+    {
         question: "What is a common age range for individuals diagnosed with SCLC?",
         options: [
           "Teenagers and young adults",
@@ -63,11 +73,11 @@ const quizData = [
         question: "Which of the following was shown to reduce radiation-induced diarrhea in patients?",
         options: [
           "Multivitamins",
-          "Protein powder",
           "VSL#3 probiotic",
+          "Protein powder",
           "Vitamin D"
         ],
-        correct: 2
+        correct: 1
     },
     {
         question: "What activity is recommended to help reduce fatigue after radiation therapy?",
